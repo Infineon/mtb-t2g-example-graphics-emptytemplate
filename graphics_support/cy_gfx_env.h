@@ -334,6 +334,7 @@ typedef struct
 
 #define CY_BSP_HDR_DISP1_TTL_AVAILABLE          /* Definitions for this functionality are available*/
 
+#if defined(CY_DEVICE_TVIIC2D6M)
 #define CY_DISP1_CLK_PORT                       GPIO_PRT21
 #define CY_DISP1_CLK_PIN                        1
 #define CY_DISP1_CLK_PIN_MUX                    P21_1_VIDEOSS0_TTL_DSP1_CLOCK    /* PCLK*/
@@ -446,6 +447,119 @@ typedef struct
 #define CY_DISP1_DATA_A1_11_PIN                 5
 #define CY_DISP1_DATA_A1_11_PIN_MUX             P20_5_VIDEOSS0_TTL_DSP1_DATA_A111/* BLUE7*/
 
+#elif defined (CY_DEVICE_TVIIC2D4M)
+#define CY_DISP1_CLK_PORT                       GPIO_PRT16
+#define CY_DISP1_CLK_PIN                        2
+#define CY_DISP1_CLK_PIN_MUX                    P16_2_VIDEOSS0_TTL_DSP1_CLOCK    // PCLK
+    
+#define CY_DISP1_CTRL0_PORT                     GPIO_PRT16
+#define CY_DISP1_CTRL0_PIN                      3
+#define CY_DISP1_CTRL0_PIN_MUX                  P16_3_VIDEOSS0_TTL_DSP1_CONTROL0 // LVALID
+    
+#define CY_DISP1_CTRL1_PORT                     GPIO_PRT16
+#define CY_DISP1_CTRL1_PIN                      4
+#define CY_DISP1_CTRL1_PIN_MUX                  P16_4_VIDEOSS0_TTL_DSP1_CONTROL1 // VSYNC
+    
+#define CY_DISP1_CTRL2_PORT                     GPIO_PRT16
+#define CY_DISP1_CTRL2_PIN                      5
+#define CY_DISP1_CTRL2_PIN_MUX                  P16_5_VIDEOSS0_TTL_DSP1_CONTROL2 // DE
+    
+#define CY_DISP1_DATA_A0_0_PORT                 GPIO_PRT16
+#define CY_DISP1_DATA_A0_0_PIN                  1
+#define CY_DISP1_DATA_A0_0_PIN_MUX              P16_1_VIDEOSS0_TTL_DSP1_DATA_A00 // RED0
+    
+#define CY_DISP1_DATA_A0_1_PORT                 GPIO_PRT15
+#define CY_DISP1_DATA_A0_1_PIN                  7
+#define CY_DISP1_DATA_A0_1_PIN_MUX              P15_7_VIDEOSS0_TTL_DSP1_DATA_A01 // RED2
+    
+#define CY_DISP1_DATA_A0_2_PORT                 GPIO_PRT15
+#define CY_DISP1_DATA_A0_2_PIN                  5
+#define CY_DISP1_DATA_A0_2_PIN_MUX              P15_5_VIDEOSS0_TTL_DSP1_DATA_A02 // RED4
+    
+#define CY_DISP1_DATA_A0_3_PORT                 GPIO_PRT15
+#define CY_DISP1_DATA_A0_3_PIN                  3
+#define CY_DISP1_DATA_A0_3_PIN_MUX              P15_3_VIDEOSS0_TTL_DSP1_DATA_A03 // RED6
+    
+#define CY_DISP1_DATA_A0_4_PORT                 GPIO_PRT15
+#define CY_DISP1_DATA_A0_4_PIN                  1
+#define CY_DISP1_DATA_A0_4_PIN_MUX              P15_1_VIDEOSS0_TTL_DSP1_DATA_A04 // GREEN0
+    
+#define CY_DISP1_DATA_A0_5_PORT                 GPIO_PRT14
+#define CY_DISP1_DATA_A0_5_PIN                  7
+#define CY_DISP1_DATA_A0_5_PIN_MUX              P14_7_VIDEOSS0_TTL_DSP1_DATA_A05 // GREEN2
+    
+#define CY_DISP1_DATA_A0_6_PORT                 GPIO_PRT14
+#define CY_DISP1_DATA_A0_6_PIN                  5
+#define CY_DISP1_DATA_A0_6_PIN_MUX              P14_5_VIDEOSS0_TTL_DSP1_DATA_A06 // GREEN4
+    
+#define CY_DISP1_DATA_A0_7_PORT                 GPIO_PRT14
+#define CY_DISP1_DATA_A0_7_PIN                  3
+#define CY_DISP1_DATA_A0_7_PIN_MUX              P14_3_VIDEOSS0_TTL_DSP1_DATA_A07 // GREEN6
+    
+#define CY_DISP1_DATA_A0_8_PORT                 GPIO_PRT14
+#define CY_DISP1_DATA_A0_8_PIN                  1
+#define CY_DISP1_DATA_A0_8_PIN_MUX              P14_1_VIDEOSS0_TTL_DSP1_DATA_A08 // BLUE0
+    
+#define CY_DISP1_DATA_A0_9_PORT                 GPIO_PRT13
+#define CY_DISP1_DATA_A0_9_PIN                  7
+#define CY_DISP1_DATA_A0_9_PIN_MUX              P13_7_VIDEOSS0_TTL_DSP1_DATA_A09 // BLUE2
+    
+#define CY_DISP1_DATA_A0_10_PORT                GPIO_PRT13
+#define CY_DISP1_DATA_A0_10_PIN                 5
+#define CY_DISP1_DATA_A0_10_PIN_MUX             P13_5_VIDEOSS0_TTL_DSP1_DATA_A010// BLUE4
+    
+#define CY_DISP1_DATA_A0_11_PORT                GPIO_PRT13
+#define CY_DISP1_DATA_A0_11_PIN                 3
+#define CY_DISP1_DATA_A0_11_PIN_MUX             P13_3_VIDEOSS0_TTL_DSP1_DATA_A011// BLUE6
+    
+#define CY_DISP1_DATA_A1_0_PORT                 GPIO_PRT16
+#define CY_DISP1_DATA_A1_0_PIN                  0
+#define CY_DISP1_DATA_A1_0_PIN_MUX              P16_0_VIDEOSS0_TTL_DSP1_DATA_A10 // RED1
+    
+#define CY_DISP1_DATA_A1_1_PORT                 GPIO_PRT15
+#define CY_DISP1_DATA_A1_1_PIN                  6
+#define CY_DISP1_DATA_A1_1_PIN_MUX              P15_6_VIDEOSS0_TTL_DSP1_DATA_A11 // RED3
+    
+#define CY_DISP1_DATA_A1_2_PORT                 GPIO_PRT15
+#define CY_DISP1_DATA_A1_2_PIN                  4
+#define CY_DISP1_DATA_A1_2_PIN_MUX              P15_4_VIDEOSS0_TTL_DSP1_DATA_A12 // RED5
+    
+#define CY_DISP1_DATA_A1_3_PORT                 GPIO_PRT15
+#define CY_DISP1_DATA_A1_3_PIN                  2
+#define CY_DISP1_DATA_A1_3_PIN_MUX              P15_2_VIDEOSS0_TTL_DSP1_DATA_A13 // RED7
+    
+#define CY_DISP1_DATA_A1_4_PORT                 GPIO_PRT15
+#define CY_DISP1_DATA_A1_4_PIN                  0
+#define CY_DISP1_DATA_A1_4_PIN_MUX              P15_0_VIDEOSS0_TTL_DSP1_DATA_A14 // GREEN1
+    
+#define CY_DISP1_DATA_A1_5_PORT                 GPIO_PRT14
+#define CY_DISP1_DATA_A1_5_PIN                  6
+#define CY_DISP1_DATA_A1_5_PIN_MUX              P14_6_VIDEOSS0_TTL_DSP1_DATA_A15 // GREEN3
+    
+#define CY_DISP1_DATA_A1_6_PORT                 GPIO_PRT14
+#define CY_DISP1_DATA_A1_6_PIN                  4
+#define CY_DISP1_DATA_A1_6_PIN_MUX              P14_4_VIDEOSS0_TTL_DSP1_DATA_A16 // GREEN5
+    
+#define CY_DISP1_DATA_A1_7_PORT                 GPIO_PRT14
+#define CY_DISP1_DATA_A1_7_PIN                  2
+#define CY_DISP1_DATA_A1_7_PIN_MUX              P14_2_VIDEOSS0_TTL_DSP1_DATA_A17 // GREEN7
+    
+#define CY_DISP1_DATA_A1_8_PORT                 GPIO_PRT14
+#define CY_DISP1_DATA_A1_8_PIN                  0
+#define CY_DISP1_DATA_A1_8_PIN_MUX              P14_0_VIDEOSS0_TTL_DSP1_DATA_A18 // BLUE1
+    
+#define CY_DISP1_DATA_A1_9_PORT                 GPIO_PRT13
+#define CY_DISP1_DATA_A1_9_PIN                  6
+#define CY_DISP1_DATA_A1_9_PIN_MUX              P13_6_VIDEOSS0_TTL_DSP1_DATA_A19 // BLUE3
+    
+#define CY_DISP1_DATA_A1_10_PORT                GPIO_PRT13
+#define CY_DISP1_DATA_A1_10_PIN                 4
+#define CY_DISP1_DATA_A1_10_PIN_MUX             P13_4_VIDEOSS0_TTL_DSP1_DATA_A110// BLUE5
+    
+#define CY_DISP1_DATA_A1_11_PORT                GPIO_PRT13
+#define CY_DISP1_DATA_A1_11_PIN                 2
+#define CY_DISP1_DATA_A1_11_PIN_MUX             P13_2_VIDEOSS0_TTL_DSP1_DATA_A111// BLUE7
+#endif
 
 /******************************************************************************/
 /*                      FPD-LINK to HDMI Definitions                          */

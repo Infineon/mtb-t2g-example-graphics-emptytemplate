@@ -16,21 +16,23 @@ The drivers used or available in this code example are listed below.
 
 ## Requirements
 
-- [ModusToolbox&trade;](https://www.infineon.com/modustoolbox) v3.5 or later (tested with v3.5)
+- [ModusToolbox&trade;](https://www.infineon.com/modustoolbox) v3.7 or later (tested with v3.7)
 - This code example uses [TRAVEO&trade; T2G Virtual Display Tool](https://softwaretools-preview.icp.infineon.com/tools/com.ifx.tb.tool.traveot2gvirtualdisplaytool) to output image. This Tool is available only on Windows.
 
 ## Supported toolchains (make variable 'TOOLCHAIN')
 
-- GNU Arm&reg; Embedded Compiler v11.3.1 (`GCC_ARM`) – Default value of `TOOLCHAIN`
+- GNU Arm&reg; Embedded Compiler v14.2.1 (`GCC_ARM`) – Default value of `TOOLCHAIN`
 
 ## Device
 The device used in this code example (CE) is:
 - [TRAVEO&trade; T2G CYT4DN Series](https://www.infineon.com/cms/en/product/microcontroller/32-bit-traveo-t2g-arm-cortex-microcontroller/32-bit-traveo-t2g-arm-cortex-for-cluster/traveo-t2g-cyt4dn/)
 
+- [TRAVEO&trade; T2G CYT3DL Series](https://www.infineon.com/products/microcontroller/32-bit-traveo-t2g-arm-cortex/for-cluster/t2g-cyt3dl)
+
 ## Board
 The board used for testing is:
 - TRAVEO&trade; T2G Cluster 6M Lite Kit ([KIT_T2G_C-2D-6M_LITE](https://www.infineon.com/cms/en/product/evaluation-boards/kit_t2g_c-2d-6m_lite/))
-
+- TRAVEO™ T2G Cluster 4M Lite Kit ([KIT_T2G_C-2D-4M_LITE](https://www.infineon.com/evaluation-board/KIT-T2G-C-2D-4M-LITE))
 ## Scope of work
 In this example, it will provide initialization setting for graphics environment as commonly setting.
 
@@ -82,18 +84,29 @@ The graphics subsystem is designed to fit into the TRAVEO&trade; T2G Cluster MCU
 
 More details can be found in:
 - TRAVEO&trade; T2G CYT4DN
-    - [Technical Reference Manual (TRM)](https://www.infineon.com/products/microcontroller/32-bit-traveo-t2g-arm-cortex/for-cluster/t2g-cyt4dn#documents)
-    - [Registers TRM](https://www.infineon.com/products/microcontroller/32-bit-traveo-t2g-arm-cortex/for-cluster/t2g-cyt4dn#documents)
-    - [Data Sheet](https://www.infineon.com/products/microcontroller/32-bit-traveo-t2g-arm-cortex/for-cluster/t2g-cyt4dn#documents)
+    - [Technical Reference Manual (TRM)](https://www.infineon.com/products/microcontroller/32-bit-traveo-t2g-arm-cortex/for-cluster#documents)
+    - [Registers TRM](https://www.infineon.com/products/microcontroller/32-bit-traveo-t2g-arm-cortex/for-cluster#documents)
+    - [Data Sheet](https://www.infineon.com/products/microcontroller/32-bit-traveo-t2g-arm-cortex/for-cluster#documents)
+- TRAVEO&trade; T2G CYT3DL
+    - [Technical Reference Manual (TRM)](https://www.infineon.com/products/microcontroller/32-bit-traveo-t2g-arm-cortex/for-cluster#documents)
+    - [Registers TRM](https://www.infineon.com/products/microcontroller/32-bit-traveo-t2g-arm-cortex/for-cluster#documents)
+    - [Data Sheet](https://www.infineon.com/products/microcontroller/32-bit-traveo-t2g-arm-cortex/for-cluster#documents)
 
 ## Hardware setup
 
 This CE has been developed for:
 - TRAVEO&trade; T2G Cluster 6M Lite Kit ([KIT_T2G_C-2D-6M_LITE](https://www.infineon.com/cms/en/product/evaluation-boards/kit_t2g_c-2d-6m_lite/))<BR>
+- TRAVEO™ T2G Cluster 4M Lite Kit ([KIT_T2G_C-2D-4M_LITE](https://www.infineon.com/cms/en/product/evaluation-boards/kit_t2g_c-2d-4m_lite/))
 
 **Figure 1. KIT_T2G_C-2D-6M_LITE (Top View)**
 
 <img src="./images/kit_t2g_c-2d-6m_lite.png" width="800" /><BR>
+No changes are required from the board's default settings.
+
+
+**Figure 1B. KIT_T2G_C-2D-4M_LITE (Top View)**
+
+<img src="./images/kit_t2g_c-2d-4m_lite.png" width="800" /><BR>
 No changes are required from the board's default settings.
 
 ## Implementation
